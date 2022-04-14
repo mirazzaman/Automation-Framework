@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suit">
+
+<listeners>
+<listener class-name="com.Reports.ExtentReporterNG"></listener>
+<listener class-name="com.Analyzer.Transformations"></listener>
+</listeners>
+
+
+	<test thread-count="5" name="Regression Test Suit">
+		<classes>
+			<class name="com.Test.LoginPageTest" />
+		<!-- 	<class name="com.Test.HomePageTest" />
+			<class name="com.Test.RegistrationPageTest"/>  -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
